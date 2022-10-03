@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+    --accent-dark: hsla(228, 23%, 23%, 1);
+    --accent-light:  hsla(228, 10%, 47%, 1);
+}
+
+html{
+    font-size: 16px;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{    
+    font-family: 'Kumbh Sans', sans-serif;    
+    background-image: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-top.svg");
+    background-color: hsla(185, 75%, 39%, 1);
+    background-repeat: no-repeat, no-repeat;    
+    background-position: right 40vw bottom 40vh, left 40vw top 40vh;
+}
+
+
+.profile-card-wrapper{
+    display: flex;
+    flex-direction: column;
+    max-width: 20.5em;    
+    height: auto;
+    margin: 6em auto;
+    overflow: hidden;
+    border-radius: 0.94em;   
+}
+
+.profile-card-header{
+    display: flex;
+    justify-content: center; 
+    max-width: 20.5em;
+    height: 9em;
+    background-image: url(./images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+
+.profile-picture img {
+    max-width: 6.5em;    
+    height: auto;
+    border-radius: 50%;
+    border: solid #fff 3px;
+    position: relative;
+    top: 5.5em;
+}
+
+.personal-info-container{
+    margin:0;
+    padding: 2.5em 0 0 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.sub-container-name-age{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1.5em 0 0.80em 0;    
+}
+
+.name{
+    padding-right: 0.45em;   
+}
+
+.age{
+    font-weight: 400;
+    font-size: 1.13em;
+}
+
+.location {
+    font-size: 0.88em;
+    padding-bottom: 1.9em;
+}
+
+hr{
+    border: 0.05em solid hsla(228, 9%, 92%, 1);
+}
+
+.profile-statistics-container p, .name{
+    color:var(--accent-dark);
+    font-weight: 700;
+    font-size: 1.13em;   
+}
+
+.profile-statistics-container span, .location{
+    color: var(--accent-light);
+    font-weight: 400;
+    letter-spacing: 0.1em;
+}
+
+.profile-statistics-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em 3.4em 1.7em 3.4em;    
+}
+
+.followers-container{
+    display: flex;
+    flex-direction: column;
+}
+.likes-container{
+    display: flex;
+    flex-direction: column;
+}
+.photos-container{
+    display: flex;
+    flex-direction: column;    
+}
+
+.profile-statistics-container span{
+    font-size: 0.63em;
+}
+
+@media screen and (min-width: 600px) {
+    .profile-card-wrapper{
+        max-width: 22em;    
+    }
+
+    .profile-card-header {
+        max-width: 22em;  
+    }
+}
