@@ -7,7 +7,7 @@ This is a solution to the  Profile card component challenge on Frontend Mentor.
 
 Solution URL: (https://github.com/melloTaiyo/profile-card-component-main)
 
-Live Site URL: (https://mellotaiyo.github.io/NFT-preview-card-component/)
+Live Site URL: ([https://mellotaiyo.github.io/NFT-preview-card-component/](https://mellotaiyo.github.io/profile-card-component-main/))
 
 Built with: 
 Semantic HTML5 markup, 
